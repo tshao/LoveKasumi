@@ -1,0 +1,34 @@
+@component-form-img: "../img/ets-component-form.png";
+
+.ets-checkbox {
+    background: url("@{component-form-img}") 1px 1px no-repeat transparent;
+    .size(44px, 30px);
+    .inline-block();
+    vertical-align: middle;
+
+    &.ets-checkbox-hover {
+         background: url("@{component-form-img}") -72px 0 no-repeat transparent;
+    }
+    &.ets-checkbox-checked {
+        background: url("@{component-form-img}") 1px -35px no-repeat transparent;
+    }
+
+    &.ets-checkbox-checked.ets-checkbox-hover {
+        background: url("@{component-form-img}") -72px -36px no-repeat transparent;
+    }
+
+    input {
+        display: none;
+    }
+}
+
+.ets-nojs .ets-checkbox {
+    background: none;
+    .size(auto, auto);
+    &.ets-checkbox-checked {
+        background: none;
+    }
+    input {
+        display: block;
+    }
+}
