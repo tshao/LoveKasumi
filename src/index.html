@@ -1,10 +1,42 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Share and Describe Yourself</title>
+    <meta charset="UTF-8">
+    <title>Sharing template</title>
+
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/_shared/html5shiv/3.6/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet/less" type="text/css" href="css/ets-global.less">
+
+    <!-- Example page css -->
+    <link rel="stylesheet" type="text/css" href="mock/stylesheet/example-page.css" media="all" />
+
+    <!-- Checkbox jQuery plugin -->
+    <!-- // <script type="text/javascript" src="js/ets-checkbox.js"></script> -->
 </head>
 <body>
-	
+    <header>
+        <section>
+            <img src="mock/image/logo.png" alt="EF" id="logo">
+        </section>
+    </header>
+    <div id="title">
+        <div class="container ets-cf">
+            <div id="l">
+                Sharing Template
+            </div>
+            <div id="r">
+                Version: <strong>0.1</strong>
+            </div>
+        </div>
+    </div>
+    <section class="page">
+    	<div id="helloworld" data-weave="widget/hello">Hello world</div>
+    </section>
+
+    <script type="text/javascript" data-main="js/app.js" src="_shared/require.js/2.0.4/require.js"></script>
 </body>
 </html>
